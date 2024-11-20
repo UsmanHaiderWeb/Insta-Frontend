@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: rej;
+    src: url('/Rejouice-Headline.woff2');
+}
+
+
+:root{
+    --dark: black;
+}
+
+
+*{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: rej;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: var(--dark);
+    box-sizing: border-box;
+    user-select: none;
+}
+span, a{
+    display: inline-block;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}
+
+
+.profilePostLinks .active{
+    border-top: 2px solid black;
+}
+
+
+@keyframes loadingPost {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
